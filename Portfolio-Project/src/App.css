@@ -18,6 +18,39 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+nav {
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+nav a {
+  padding: 10px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.sectionFooter {
+  background-color: #da2780;
+  padding: 20px;
+  text-align: center;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-icons img{
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+.footer-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

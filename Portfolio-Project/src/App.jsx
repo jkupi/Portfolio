@@ -1,34 +1,36 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentSection, setCurrentSection] = useState("About Me"); // Default page shown
+
+  const renderSection = () => {
+    switch (currentSection) {
+      case "About Me":
+        return <AboutMe />;
+      case "Portfolio":
+        return <Portfolio />;
+      case "Contact":
+        return <Contact />;
+      case "Resume":
+        return <Resume />;
+      default:
+        return <AboutMe />;
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Header currentSection={currentSection} setCurrentSection={setCurrentSection} />
+      <main>{renderSection()}</main>
+      <Footer />
+    </div>
   )
 }
 
