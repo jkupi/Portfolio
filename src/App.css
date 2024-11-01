@@ -18,6 +18,11 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+header, footer, main {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 nav {
   text-align: right;
 }
