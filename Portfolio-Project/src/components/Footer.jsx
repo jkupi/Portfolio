@@ -1,5 +1,6 @@
 import gitHubIcon from '../assets/github.svg';
 import linkedInIcon from '../assets/linkedin.svg';
+import stackOverflowIcon from '../assets/stackoverflow-icon.svg';
 
 
 function Footer() {
@@ -12,8 +13,8 @@ function Footer() {
                 <a href={"https://www.linkedin.com/in/jaakob-alakulppi-248b41213/"} target="_blank">
                     <img src={linkedInIcon}/>
                 </a>
-                <a>
-                    <img/>
+                <a href={"https://stackoverflow.com/"} target="_blank">
+                    <img src={stackOverflowIcon}/>
                 </a>
             </div>
         </footer>
