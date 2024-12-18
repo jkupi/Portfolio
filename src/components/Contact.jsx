@@ -43,46 +43,9 @@ function Contact() {
   }
 
     return <div className="contact-form">
-        <h2>Contact</h2>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label>Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-            />
-            {errors.name && <span className="error">{errors.name}</span>}
-          </div>
-
-          <div>
-            <label>Email</label>
-            <input 
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            {errors.email && <span className="error">{errors.email}</span>}
-          </div>
-
-          <div>
-            <label>Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="10"
-              value={formData.message}
-              onChange={handleChange}
-              ></textarea>
-              {errors.message && <span className="error">{errors.message}</span>}
-          </div>
-
-          <button type="submit">Submit</button>
-        </form>
+        <h2>Contact Me:</h2>
+        
+        
       </div>;
   }
   

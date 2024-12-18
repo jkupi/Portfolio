@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='page'>
       <Header currentSection={currentSection} setCurrentSection={setCurrentSection} />
       <main>{renderSection()}</main>
       <Footer />

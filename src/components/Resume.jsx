@@ -1,7 +1,7 @@
 import resumeFile from '../assets/Jaakob_resume.pdf';
 
 function Resume() {
-    return <div class='resume'>
+    return <div className='resume'>
         <h2>Resume</h2>
         <a href={resumeFile} download className='download-link'>
           Download my resume
