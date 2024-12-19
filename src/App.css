@@ -246,6 +246,10 @@ h2 {
   padding-left: 10px;
 }
 
+.github-icon:hover {
+  transform: scale(1.5);
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

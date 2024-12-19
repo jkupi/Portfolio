@@ -13,14 +13,22 @@ function Resume() {
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>RESTful APIs</li>
             <li>React</li>
           </ul>
           <h4>Back-End Procifiencies</h4>
           <ul>
             <li>Node.js</li>
             <li>Express</li>
-            <li>PostgreSQL</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Relational Databases: MySQL, PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Sequelize ORM</li>
             <li>APIs</li>
+            <li>CI/CD pipelines</li>
           </ul>
         </div>
       </div>;
