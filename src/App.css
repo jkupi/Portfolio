@@ -1,14 +1,40 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  /* padding: 2rem; */
+  padding: 0;
+  display: flex;
   text-align: center;
+  min-height: 100vh;
+  min-width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+
+}
+
+.page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
   
 }
 
-/* .page {
-  
-} */
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
 
 .logo {
   height: 6em;
@@ -23,9 +49,9 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-footer, main {
-  max-width: 100%;
+footer {
   overflow: hidden;
+  margin-top: auto;
 }
 
 body {
@@ -34,6 +60,11 @@ body {
   padding: 0;
   background-color: #f0f0f0;
   color: #333333;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h2, h3, h4 {
@@ -63,7 +94,6 @@ nav a:hover {
 
 header {
   font-size: small;
-  width: 90vw;
   max-width: 100%;
   overflow: hidden;
   background-color: #DDC095;
@@ -77,12 +107,6 @@ header {
   align-items: center;
   flex-direction: column;
   color: #4b3c3c;
-}
-
-main {
-  background-color: white;
-  width: 90vw;
-  padding: 20px;
 }
 
 h1 {
@@ -192,21 +216,25 @@ h2 {
 }
 
 .sectionFooter {
-  background-color: #DDC095; /* Footer color */
+  background-color: #DDC095;
   color: #5f5f5f;
   text-align: center;
   padding: 10px 0;
+  margin-top: auto;
 }
+
 .footer-icons {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .footer-icons img{
   width: 64px;
   height: 40px;
   object-fit: contain;
 }
+
 .footer-icons img:hover {
   transform: scale(1.2);
   filter: brightness(1.2);
