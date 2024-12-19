@@ -16,6 +16,7 @@ function Resume() {
             <li>TypeScript</li>
             <li>RESTful APIs</li>
             <li>React</li>
+            <li>Vite</li>
           </ul>
           <h4>Back-End Procifiencies</h4>
           <ul>
