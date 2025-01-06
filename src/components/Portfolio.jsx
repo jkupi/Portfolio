@@ -4,20 +4,22 @@ import readme from '../assets/readme.png';
 import employee_tracker from '../assets/employee_tracker.jpg';
 import vehicleBuilder from '../assets/vehicleBuilder.png';
 import weatherAPI from '../assets/weather.jpg';
+import connect4 from '../assets/connect4logo.svg';
+import playlist from '../assets/playlist.svg';
 
 function Portfolio() {
   const projects = [
     {
-      title: 'Weather API',
-      image: [weatherAPI],
-      deployedLink: 'link',
-      gitHubLink: 'https://github.com/jkupi/Weather_api',
+      title: 'Connect 4',
+      image: [connect4],
+      deployedLink: 'https://jimk-connect4.onrender.com/',
+      gitHubLink: 'https://github.com/keithrsialana/jimk-connect4',
     },
     {
-      title: 'Generate README',
-      image: [readme],
-      deployedLink: 'link',
-      gitHubLink: 'link',
+      title: 'Playlist Persona',
+      image: [playlist],
+      deployedLink: 'https://test-deploy-ivka.onrender.com/',
+      gitHubLink: 'https://github.com/jkupi/Playlist_persona_offical_deploy',
     },
     {
       title: 'Employee Tracker',
@@ -32,16 +34,16 @@ function Portfolio() {
       gitHubLink: 'https://github.com/jkupi/Vehicle-Builder',
     },
     {
-      title: 'Coming Soon',
-      image: [comingSoon],
+      title: 'Weather API',
+      image: [weatherAPI],
       deployedLink: 'link',
-      gitHubLink: 'link',
+      gitHubLink: 'https://github.com/jkupi/Weather_api',
     },
     {
-      title: 'Coming Soon',
-      image: [comingSoon],
+      title: 'Generate README',
+      image: [readme],
       deployedLink: 'link',
-      gitHubLink: 'link',
+      gitHubLink: 'https://github.com/jkupi/Generate-README',
     },
   ];
 
